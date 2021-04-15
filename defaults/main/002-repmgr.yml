@@ -1,6 +1,6 @@
 ---
 # Required configuration items
-repmgr_target_group: ""
+repmgr_target_group: "w13cluster"
 repmgr_user: repmgr
 repmgr_password: repmgr
 repmgr_database: repmgr
