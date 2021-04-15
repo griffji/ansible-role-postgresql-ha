@@ -1,6 +1,6 @@
 ---
 # Basic settings
-postgresql_version: 12
+postgresql_version: 13.2
 postgresql_version_terse: "{{ postgresql_version | replace('.', '') }}"  # Short version of the postgresql_version, used in some path and filenames
 postgresql_encoding: UTF-8
 postgresql_data_checksums: false
@@ -53,13 +53,13 @@ postgresql_fdw_mysql_packages: "postgresql-{{ postgresql_version }}-mysql-fdw"
 postgresql_fdw_ogr_packages: "postgresql-{{ postgresql_version }}-ogr-fdw"
 
 # List of databases to be created (optional)
-postgresql_databases: []
+postgresql_databases: [ log_information ]
 
 # List of database extensions to be created (optional)
 postgresql_database_extensions: []
 
 # List of users to be created (optional)
-postgresql_users: []
+postgresql_users: [ collector ]
 
 # List of schemas to be created (optional)
 postgresql_database_schemas: []
